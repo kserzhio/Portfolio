@@ -1,0 +1,23 @@
+.blog {
+  padding: 100px 0;
+  position: relative;
+  background: linear-gradient(177deg, #100e24 0%, #030211 190%);
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+  --bs-bg-opacity: 1;
+  &__heading {
+    margin-bottom: 65px;
+    position: relative;
+    p {
+      margin: 0 0 10px;
+      font-size: 1.125rem;
+      font-weight: 600;
+      font-style: italic;
+    }
+    h2 {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+}

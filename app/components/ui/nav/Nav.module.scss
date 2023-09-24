@@ -1,0 +1,40 @@
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.navItem {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 30px;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  a {
+    text-decoration: none;
+    color: white;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(
+        270.16deg,
+        var(--px-theme) 33.61%,
+        rgba(175, 38, 118, 0) 92.05%
+      );
+      transition: ease all 0.35s;
+    }
+  }
+  &_active {
+    a {
+      &::after {
+        width: 65px;
+      }
+    }
+  }
+}
